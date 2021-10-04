@@ -12,10 +12,9 @@ RUN groupadd -g 799 nyu && \
 WORKDIR /app
 
 RUN pip install Flask
-RUN pip install requests
 
-# docker build -t lmeninato/us:latest .
-# docker run --network dns_app --name us -p 8080:8080 -it lmeninato/us:latest
+# docker build -t lmeninato/fs:latest .
+# docker run --network dns_app --name fs -p 9090:9090 -it lmeninato/fs:latest
 
 USER nyu
 
